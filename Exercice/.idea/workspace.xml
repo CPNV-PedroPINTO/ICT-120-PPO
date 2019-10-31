@@ -44,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/ICT-120-PPO/EXERCISES/EXo_3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../formulaire" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunDashboard">
@@ -74,7 +74,7 @@
       <workItem from="1570774830715" duration="1207000" />
       <workItem from="1570793849824" duration="4940000" />
       <workItem from="1572266944663" duration="6121000" />
-      <workItem from="1572532098648" duration="1054000" />
+      <workItem from="1572532098648" duration="2197000" />
     </task>
     <servers />
   </component>
