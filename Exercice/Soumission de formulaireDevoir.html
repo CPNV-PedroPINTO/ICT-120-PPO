@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form id=form_all>
+    <input id="text_go" type="text" name="qqch" value="" />
+    <input type="button" value="GO" id="sub_GO") /> </form>
+</body>
+<script>
+
+    function AlertText() {
+        if (text_go.value!==""){
+            alert(text_go.value)
+            form_all.submit(text_go.value)
+        } else {
+            alert("Warning")
+        }
+    }
+    sub_GO.addEventListener("click",AlertText)
+
+</script>
+
+
+</html>
