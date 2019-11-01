@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5dd30e34-b752-415a-9311-e935dc578c4a" name="Default Changelist" comment="" />
+    <list default="true" id="65933cb7-264c-4101-b547-6371deea3281" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,31 +13,14 @@
       <executable />
     </execution>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="CSS File" />
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1SySM2SjrEn3ChfqMA4NfcaYuKY" />
+  <component name="ProjectId" id="1T1DNVHU2KP7XLac4wyNGuCDXuB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../temp" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="nodejs_package_manager_path" value="npm" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\ICT-120-PPO\formulaire" />
-    </key>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -56,13 +39,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5dd30e34-b752-415a-9311-e935dc578c4a" name="Default Changelist" comment="" />
-      <created>1572534290395</created>
+      <changelist id="65933cb7-264c-4101-b547-6371deea3281" name="Default Changelist" comment="" />
+      <created>1572618667850</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1572534290395</updated>
-      <workItem from="1572534291486" duration="3055000" />
-      <workItem from="1572618196820" duration="600000" />
+      <updated>1572618667850</updated>
+      <workItem from="1572618668963" duration="107000" />
     </task>
     <servers />
   </component>
@@ -74,9 +56,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
