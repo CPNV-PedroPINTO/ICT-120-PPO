@@ -3,18 +3,19 @@
 <head>
 
     <link rel="stylesheet" type="text/css" href="CSS/style_Trasp.css">
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
-        integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
-        crossorigin="anonymous"></script>
-<meta charset="UTF-8">
-<title>Transport voyage</title>
-<script src="temp/node_modules/bootstrap/dist/js/bootstrap.js"></script>
-<link rel="stylesheet" href="temp/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+            integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+            crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Transport voyage</title>
+    <script src="JS/code_Transp.js"></script>
+    <script src="temp/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="temp/node_modules/bootstrap/dist/css/bootstrap.css">
 
 </head>
 <body>
@@ -27,22 +28,56 @@
     <button type="button" class="btn btn-secondary col-2">ACTIVITES</button>
     <button type="button" class="btn btn-secondary col-2">TRANSPORTS</button>
     <button type="button" class="btn btn-secondary col-2">HEBERGEMENT</button>
-    <button type="button" class="btn btn-secondary col-2">PARTICIPANTS</button><br>
-    <button type="button" class="btn btn-secondary col-5 border" >V1</button>
-    <button type="button" class="btn btn-secondary col-5 border" >V2</button>
+    <button type="button" class="btn btn-secondary col-2">PARTICIPANTS</button>
+    <br>
+    <button type="button" class="btn btn-secondary col-5 border">Transports de voyage</button>
+    <button type="button" class="btn btn-secondary col-5 border">Transports de deplacement</button>
 
 </div>
+<div class="row">
+    <img
+            src="http://images.unsplash.com/photo-1522314300028-8d1930f099eb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+            class="col-2" align="left" height="700px"
+    />
+    <div class="col-10 container-fluid flex-column " id="teableau">
+        <div class="alert-danger border border-danger">
+            Départ de
+            <div id="lul">Bern</div>
+            <div>Genève</div>
+            <div>Bus</div>
+            <div>7h45</div>->
+            <div>8h45</div>
+        </div>
+        <div class="alert-dark border border-dark">
+            Départ de
+            <div>Yverdon-les-Bains</div>a
+            <div>snt-croix</div>
+            <div>Bus</div>
+            <div>7h45</div>->
+            <div>8h45</div>
+        </div>
+        <div class="alert-info border border-info">
+            Départ de
+            <div>Genève</div>a
+            <div>Lissbone</div>
+            <div>Bus</div>
+            <div>7h45</div>->
+            <div>8h45</div>
+        </div>
+    </div>
+</div>
+<div>
+    ville 1
+    <input type="text" id="txtLieu">
+    <div class="btn btn-success" id="cmdSave">Ajouter ville de dépard</div>
+</div>
 
-
-
-
-
-<img
-        src="http://images.unsplash.com/photo-1522314300028-8d1930f099eb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
-        class="col-2" align="left" height="700px"
-/>
-
-<div class="col-12" align="right" >
+<div>
+    ville 2
+    <input type="text" id="txtLieu2">
+    <div class="btn btn-success" id="cmdSave2">Ajouter ville d'arivée</div>
+</div>
+<div class="col-12" align="right">
     <p>
         cesi est un gros tets <br>je<br>m'<br>apelle<br>Pedro<br>Miguel<br>Queiros<br>Pinto<br>L<br>U<br>L<br>
     </p>
