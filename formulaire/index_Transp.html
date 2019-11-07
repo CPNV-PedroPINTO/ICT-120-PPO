@@ -34,38 +34,94 @@
     <button type="button" class="btn btn-secondary col-5 border">Transports de deplacement</button>
 
 </div>
+----
+<table class="table">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">Ville de départ</th>
+        <th scope="col">Ville d'arrivée</th>
+        <th scope="col">Transport utillisé</th>
+        <th scope="col">Date/Heure de dépard</th>
+        <th scope="col">Date/Heure de arrivée</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Bern</td>
+        <td>Genève</td>
+        <td>Train</td>
+
+    </tr>
+    <tr>
+        <td>Lausanne</td>
+        <td>Yverdon</td>
+        <td>Voiture</td>
+
+    </tr>
+    <tr>
+        <td>Lisbon</td>
+        <td>Berlin</td>
+        <td>Avion</td>
+
+    </tr>
+    </tbody>
+</table>
+
+-----
+
 <div class="row">
     <img
             src="http://images.unsplash.com/photo-1522314300028-8d1930f099eb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
             class="col-2" align="left" height="700px"
     />
-    <div class="col-10 container-fluid flex-column " id="teableau">
-        <div class="alert-danger border border-danger">
-            Départ de
-            <div id="lul">Bern</div>
-            <div>Genève</div>
-            <div>Bus</div>
-            <div>7h45</div>->
-            <div>8h45</div>
-        </div>
-        <div class="alert-dark border border-dark">
-            Départ de
-            <div>Yverdon-les-Bains</div>a
-            <div>snt-croix</div>
-            <div>Bus</div>
-            <div>7h45</div>->
-            <div>8h45</div>
-        </div>
-        <div class="alert-info border border-info">
-            Départ de
-            <div>Genève</div>a
-            <div>Lissbone</div>
-            <div>Bus</div>
-            <div>7h45</div>->
-            <div>8h45</div>
-        </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+//------------Tableau container-fluid -----------------
+
+<div class="col-10 container-fluid flex-column " id="teableau">
+    <div class="alert-danger border border-danger">
+        Départ de
+        <div>Bern</div>
+        <div>Genève</div>
+        <div>Bus</div>
+        <div>7h45</div>
+        ->
+        <div>8h45</div>
+    </div>
+    <div class="alert-dark border border-dark">
+        Départ de
+        <div>Yverdon-les-Bains</div>
+        a
+        <div>snt-croix</div>
+        <div>Bus</div>
+        <div>7h45</div>
+        ->
+        <div>8h45</div>
+    </div>
+    <div class="alert-info border border-info">
+        Départ de
+        <div>Genève</div>
+        a
+        <div>Lissbone</div>
+        <div>Bus</div>
+        <div>7h45</div>
+        ->
+        <div>8h45</div>
     </div>
 </div>
+</div>
+
 <div>
     ville 1
     <input type="text" id="txtLieu">
@@ -77,10 +133,45 @@
     <input type="text" id="txtLieu2">
     <div class="btn btn-success" id="cmdSave2">Ajouter ville d'arivée</div>
 </div>
-<div class="col-12" align="right">
-    <p>
-        cesi est un gros tets <br>je<br>m'<br>apelle<br>Pedro<br>Miguel<br>Queiros<br>Pinto<br>L<br>U<br>L<br>
-    </p>
+//------------Tableau Dalton------------------
+
+<div>
+    <thead>
+    <tr>
+        <td>prénom</td>
+        <td>nom</td>
+        <br>
+    </tr>
+    </thead>
+    <tbody>
+    <div  class="alert-danger border border-danger">
+        <tr >
+            <td>Joe</td>
+            <td>Dalton</td>
+            <td>
+                <div id="killline1" class="btn btn-danger">Supprimer</div>
+            </td>
+            <br>
+        </tr>
+
+    </div>
+    <tr>
+        <td>Jack</td>
+        <td>Dalton</td>
+        <td>
+            <div id="killline2" class="btn btn-danger">Supprimer</div>
+        </td>
+        <br>
+    </tr>
+    <tr>
+        <td>william</td>
+        <td>Dalton</td>
+        <td>
+            <div id="killline3 " class="btn btn-danger">Supprimer</
+            >
+        </td>
+        <br>
+    </tr>
+    </tbody>
 </div>
-</body>
-</html>
+//--------------------------------
