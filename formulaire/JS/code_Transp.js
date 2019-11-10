@@ -1,32 +1,33 @@
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
-    cmdsave.addEventListener("click", cmdsave1);
+
+
+    cmdsave1.addEventListener("click", addline)
+    killline1.addEventListener("click", killline)
+
 }
 
-function addcol() {
-    rows = tblBody.children
-    for (i = 0; i < rows.length; i++) {
-        tr = rows[i]
-        newtd = document.createElement('td')
-        newtd.innerText = 'Nouvelle ligne ' + i
-        tr.appendChild(newtd)
-    }
-}
-
-function cmdsave1() {
-    ligne1 = document.createElement();
-    ligne1.innerText = txtLieu.value;
-    console.log('yo');
-}
 
 function addline() {
     newtr = document.createElement('tr')
     newtd1 = document.createElement('td')
-    newtd1.innerText = 'ma'
+    newtd1.innerText = txtLieu.value
     newtd2 = document.createElement('td')
-    newtd2.innertext = 'Dalton'
+    newtd2.innertext = txtLieu2.value
     newtd3 = document.createElement('td')
+    newtd3.innertext = transport.value
+    newtd4 = document.createElement('td')
+    newtd4.innertext = Date1.value
+    newtd5 = document.createElement('td')
+    newtd5.innertext = Date2.value
+    newtd6 = document.createElement('td')
+    newbtn = document.createElement('div')
+    newtd6.appendChild(newbtn)
+    newbtn.classList = "btn btn-danger"
+    newbtn.innertext = 'supprimer'
+
+
     newdiv = document.createElement('div')
     newdiv.innerText = 'supprimer'
     newdiv.className = 'btn btn-danger'
@@ -45,3 +46,10 @@ function killline(event) {
     table = tr.parentNode
     table.removeChild(tr)
 }
+
+function save1effect() {
+    console.log('save1')
+}
+
+
+

@@ -34,61 +34,77 @@
     <button type="button" class="btn btn-secondary col-5 border">Transports de deplacement</button>
 
 </div>
-----
-<table class="table">
-    <thead class="thead-dark">
-    <tr>
-        <th scope="col">Ville de départ</th>
-        <th scope="col">Ville d'arrivée</th>
-        <th scope="col">Transport utillisé</th>
-        <th scope="col">Date/Heure de dépard</th>
-        <th scope="col">Date/Heure de arrivée</th>
-
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>Bern</td>
-        <td>Genève</td>
-        <td>Train</td>
-
-    </tr>
-    <tr>
-        <td>Lausanne</td>
-        <td>Yverdon</td>
-        <td>Voiture</td>
-
-    </tr>
-    <tr>
-        <td>Lisbon</td>
-        <td>Berlin</td>
-        <td>Avion</td>
-
-    </tr>
-    </tbody>
-</table>
-
------
-
 <div class="row">
     <img
             src="http://images.unsplash.com/photo-1522314300028-8d1930f099eb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
-            class="col-2" align="left" height="700px"
+            class="col-3" align="left" height="700px"
     />
+
+    <div class="border progress-bar progress-bar-striped bg-warning">
+        <div class="text-dark">Ajouter ville de dépard<br></div>
+        <input type="text" id="txtLieu"><br>
+        <div class="text-dark"> Ajouter ville d'arivée<br></div>
+        <input type="text" id="txtLieu2"><br>
+        <div class="text-dark">Ajouter un Transport<br></div>
+        <input type="text" id="transport"><br>
+        <div class="text-dark"> Ajouter une date/heure de dépard<br></div>
+        <input type="text" id="Date1"><br>
+        <div class="text-dark"> Ajouter une date/heure d'arivée<br></div>
+        <input type="text" id="Date2"><br>
+        <div class="btn btn-success" id="cmdsave1">Save</div>
+    </div>
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Ville de départ</th>
+            <th scope="col">Ville d'arrivée</th>
+            <th scope="col">Transport utillisé</th>
+            <th scope="col">Date/Heure de dépard</th>
+            <th scope="col">Date/Heure de arrivée</th>
+            <th scope="col">Supprimer la ligne</th>
+        </tr>
+        </thead>
+        <tbody id="tblbody">
+        <tr>
+            <td>Bern</td>
+            <td>Genève</td>
+            <td>Train</td>
+            <td>le jj.mm.aaaa à 17h30</td>
+            <td>le jj.mm.aaaa à 18h00</td>
+            <td>
+                <div id="killline1" class="btn btn-danger">Supprimer</div>
+            </td>
+        </tr>
+        <tr>
+            <td>Lausanne</td>
+            <td>Yverdon</td>
+            <td>Voiture</td>
+            <td>le jj.mm.aaaa à 17h30</td>
+            <td>le jj.mm.aaaa à 18h00</td>
+            <td>
+                <div id="killline2" class="btn btn-danger">Supprimer</div>
+            </td>
+        </tr>
+        <tr>
+            <td>Lisbon</td>
+            <td>Berlin</td>
+            <td>Avion</td>
+            <td>le jj.mm.aaaa à 17h30</td>
+            <td>le jj.mm.aaaa à 18h00</td>
+            <td>
+                <div id="killline3" class="btn btn-danger">Supprimer</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 </div>
 </body>
 </html>
 
 
-
-
-
-
-
-
-
-//------------Tableau container-fluid -----------------
-
+<!--
+-----------tableau 1er essait -----------
 <div class="col-10 container-fluid flex-column " id="teableau">
     <div class="alert-danger border border-danger">
         Départ de
@@ -122,18 +138,10 @@
 </div>
 </div>
 
-<div>
-    ville 1
-    <input type="text" id="txtLieu">
-    <div class="btn btn-success" id="cmdSave">Ajouter ville de dépard</div>
-</div>
+ -->
 
-<div>
-    ville 2
-    <input type="text" id="txtLieu2">
-    <div class="btn btn-success" id="cmdSave2">Ajouter ville d'arivée</div>
-</div>
-//------------Tableau Dalton------------------
+<!--
+------------Tableau Dalton------------------
 
 <div>
     <thead>
@@ -175,3 +183,4 @@
     </tbody>
 </div>
 //--------------------------------
+ -->
