@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- cette balise elle est la pour me permetre d'utliser les accents-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <!-- Image du LOGO CPNV-->
+    <img src="cpnv.png" height="60" width="119"/>
+
+    <!-- Cette balise relie le CSS au HTML -->
+    <link rel="stylesheet" type="text/css" href="CSS/style_Trasp.css">
+
+    <!-- Cettes balises ajoute des propriétées et des classes Bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+            integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+            crossorigin="anonymous"></script>
+    <script src="temp/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="temp/node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <!-- Cette servent à placer des métadonnées (metadata) dans le HTML -->
+    <meta charset="UTF-8">
+
+    <!-- Cette balise relie le JS au HTML -->
+    <script src="JS/code_Transp.js"></script>
+
+    <title>Transport / voyage</title>
+</head>
+<body class="p-3 mb-2 bg-transparent text-dark">
+
+<!-- Titre sur le haut de la page au centre et en gras -->
+<h1 type="large" align="center"><strong>Transports</strong></h1>
+
+<!-- creation de la barre de boutons sur le haut de la page totu en leurs ajouter des classes bootstrap -->
+<div class="barre" align="center">
+    <button type="button" class="btn btn-secondary col-2">ACCUEIL</button>
+    <button type="button" class="btn btn-secondary col-2">ACTIVITES</button>
+    <button type="button" class="btn btn-secondary col-2">TRANSPORTS</button>
+    <button type="button" class="btn btn-secondary col-2">HEBERGEMENT</button>
+    <button type="button" class="btn btn-secondary col-2">PARTICIPANTS</button>
+    <br>
+    <br>
+</div>
+<div class="row">
+
+<!-- mis en place de la structure du tableau principale a l'aide d'une balsise <tableau> de la classe table ainsi que de tr et de td pour definir les colones et les lignes -->
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Ville de départ</th>
+            <th scope="col">Ville d'arrivée</th>
+            <th scope="col">Transport utillisé</th>
+            <th scope="col">Date/Heure de dépard</th>
+            <th scope="col">Date/Heure de arrivée</th>
+            <th scope="col">Supprimer la ligne</th>
+        </tr>
+        </thead>
+        <br>
+        <br>
+        <br>
+        <br>
+        <tbody id="tblbody">
+        </tbody>
+    </table>
+
+    <!-- image centrale colée a la console  -->
+    <div align="left">
+        <img src="https://www.indemniflight.com/wp-content/uploads/2017/02/voyages-organises11-1280x420.jpg"
+             alt="Comment choisir sa destination de voyage ?" width="1280" height="420">
+    </div>
+
+    <!-- miss en place de la console avec la quel on remplira le tableau. elle est faitre de balises DIV (pour le text d'indication) et de INPUT (pour les zone ou on
+    entra nos informations) ainai que d'un BUTTON (pour valider le tout et l'incrémenter dans le tableau). tous sa embéli et placé a l'aide de plusieures classes bootstrap et CSS téles que (text-dark, background-color:grey, border, )-->
+    <div style="background-color:grey; " class="border border-dark">
+        <div class="text-dark"><strong>Ajouter ville de dépard</strong><br></div>
+        <input class="border border-dark" type="text" id="txtLieu"><br>
+        <div class="text-dark"><strong>Ajouter ville d'arivée</strong><br></div>
+        <input class="border border-dark" type="text" id="txtLieu2"><br>
+        <div class="text-dark"><strong>Ajouter un Transport</strong><br></div>
+        <input class="border border-dark" type="text" id="transport"><br>
+        <div class="text-dark"><strong>Ajouter une date/heure de dépard</strong><br></div>
+        <input class="border border-dark" type="datetime-local" id="date"> <br>
+        <div class="text-dark"><strong>Ajouter une date/heure d'arivée</strong><br></div>
+        <input class="border border-dark" type="datetime-local" id="date2"> <br>
+        <div class="btn btn-success border border-dark" id="cmdsave">Save</div>
+    </div>
+</div>
+</div>
+</body>
+</html>
+
+<!-- Cessi sont tous mes eesait que j'ai décidé de gardé de côté -->
+
+
+<!--
+<div class="container">
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+    </div>
+</div>
+
+
+-----------tableau 1er essait -----------
+<div class="col-10 container-fluid flex-column " id="teableau">
+    <div class="alert-danger border border-danger">
+        Départ de
+        <div>Bern</div>
+        <div>Genève</div>
+        <div>Bus</div>
+        <div>7h45</div>
+        ->
+        <div>8h45</div>
+    </div>
+    <div class="alert-dark border border-dark">
+        Départ de
+        <div>Yverdon-les-Bains</div>
+        a
+        <div>snt-croix</div>
+        <div>Bus</div>
+        <div>7h45</div>
+        ->
+        <div>8h45</div>
+    </div>
+    <div class="alert-info border border-info">
+        Départ de
+        <div>Genève</div>
+        a
+        <div>Lissbone</div>
+        <div>Bus</div>
+        <div>7h45</div>
+        ->
+        <div>8h45</div>
+    </div>
+</div>
+</div>
+ -->
+
+<!--
+------------Tableau Dalton------------------
+<div>
+    <thead>
+    <tr>
+        <td>prénom</td>
+        <td>nom</td>
+        <br>
+    </tr>
+    </thead>
+    <tbody>
+    <div  class="alert-danger border border-danger">
+        <tr >
+            <td>Joe</td>
+            <td>Dalton</td>
+            <td>
+                <div id="killline1" class="btn btn-danger">Supprimer</div>
+            </td>
+            <br>
+        </tr>
+    </div>
+    <tr>
+        <td>Jack</td>
+        <td>Dalton</td>
+        <td>
+            <div id="killline2" class="btn btn-danger">Supprimer</div>
+        </td>
+        <br>
+    </tr>
+    <tr>
+        <td>william</td>
+        <td>Dalton</td>
+        <td>
+            <div id="killline3 " class="btn btn-danger">Supprimer</
+            >
+        </td>
+        <br>
+    </tr>
+    </tbody>
+</div>
+//--------------------------------
+ -->
