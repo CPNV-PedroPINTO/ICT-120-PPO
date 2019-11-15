@@ -1,0 +1,16 @@
+.barre {                                      /* classe CSS qui régle la taille a 108px */
+    height: 108px ;
+}
+.chose                                        /* classe CSS place l'élément a gauche */
+{
+    float: left;
+}
+.border{                                      /* classe CSS ajout une bordure noire */
+    border: black;
+}
+.vertclair{                                   /* classe CSS qui rend le fond vert-clair */
+    background-color: lightgreen;
+}
+#rederror{                                    /* classe CSS qui rend le fond rouge */
+    background-color: red;
+}
