@@ -11,3 +11,8 @@ div {
    display : none;
 
 }
+
+.disabled{
+    color : darkGray;
+    font-style: italic;
+}
